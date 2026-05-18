@@ -40,19 +40,109 @@ job application, LinkedIn profile, interview preparation, career story,
 - 输出岗位定制版简历 bullet、个人简介、技能映射、缺口补偿策略和待确认事实。
 - 支持中文 JD、英文 JD、中文简历、英文简历和中英混合求职场景。
 
-## Install
+## Install for AI Coding Agents / 安装到 AI 编程助手
+
+The recommended installer is the Agent Skills CLI. It can install this skill into Codex, Claude Code, Cursor, or multiple agents at once.
+
+推荐使用 Agent Skills CLI 安装。它可以把这个 skill 安装到 Codex、Claude Code、Cursor，或者一次安装到多个 AI coding agents。
+
+### Quick Install / 快速安装
+
+Install for Codex:
 
 ```bash
 npx skills add mikezhangyl/jd-cv-grill -a codex
 ```
 
-Manual Codex install:
+Install for Claude Code:
+
+```bash
+npx skills add mikezhangyl/jd-cv-grill -a claude-code
+```
+
+Install for Cursor:
+
+```bash
+npx skills add mikezhangyl/jd-cv-grill -a cursor
+```
+
+Install for both Claude Code and Cursor:
+
+```bash
+npx skills add mikezhangyl/jd-cv-grill -a claude-code cursor
+```
+
+Install for all detected agents:
+
+```bash
+npx skills add mikezhangyl/jd-cv-grill --all
+```
+
+中文说明：
+
+- Codex 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a codex`
+- Claude Code 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a claude-code`
+- Cursor 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a cursor`
+- 如果你同时使用 Claude Code 和 Cursor，运行 `npx skills add mikezhangyl/jd-cv-grill -a claude-code cursor`
+- 如果你希望安装到所有已检测到的 agent，运行 `npx skills add mikezhangyl/jd-cv-grill --all`
+
+### Preview Before Installing / 安装前预览
+
+List the skills available in this repository without installing:
+
+```bash
+npx skills add mikezhangyl/jd-cv-grill --list
+```
+
+### Global Install / 全局安装
+
+Install globally instead of only for the current project:
+
+```bash
+npx skills add mikezhangyl/jd-cv-grill -g -a claude-code cursor
+```
+
+如果你希望这个 skill 在所有项目里都可用，可以加 `-g` 做全局安装。
+
+### Update / 更新
+
+When this skill is updated, run:
+
+```bash
+npx skills update jd-cv-grill
+```
+
+Or update all installed skills:
+
+```bash
+npx skills update
+```
+
+### Verify Installation / 验证安装
+
+List installed skills:
+
+```bash
+npx skills list
+```
+
+For global skills:
+
+```bash
+npx skills list -g
+```
+
+### Manual Codex Install / 手动安装到 Codex
 
 ```bash
 git clone https://github.com/mikezhangyl/jd-cv-grill.git
 mkdir -p ~/.codex/skills/jd-cv-grill
 cp -R jd-cv-grill/SKILL.md jd-cv-grill/agents ~/.codex/skills/jd-cv-grill/
 ```
+
+Manual installation is mainly useful if the CLI is unavailable. In most cases, prefer `npx skills add`.
+
+手动安装只建议在 CLI 不可用时使用。大多数情况下，直接使用 `npx skills add` 更稳。
 
 ## Usage
 
