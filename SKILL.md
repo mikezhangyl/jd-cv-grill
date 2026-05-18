@@ -11,6 +11,12 @@ Turn a job description into a targeted, evidence-backed resume or CV. Use this s
 
 把一份 JD 转化为一份有证据、有取舍、能过筛选也经得起面试追问的定制简历。这个 skill 的重点不是快速润色，而是通过一轮一问的方式，把用户可能已经遗忘、低估或没有讲清楚的项目、贡献、指标、约束、判断和故事挖出来。
 
+## Why This Exists / 为什么需要它
+
+You may know the feeling: you open a job description and cannot immediately see how to reshape your resume around it. The goal is not to invent experience. The real problem is that experienced candidates have often done many things across many projects, roles, and teams, so the most relevant proof can be buried in memory. Many JDs also read like wish lists: long skill lists, broad requirements, and unclear priorities. This skill helps at that exact point: read the role, recover overlooked evidence, identify which projects, decisions, results, and strengths matter most for this job, and turn them into a more truthful, specific, and role-fit CV or resume.
+
+用户可能不是没有经历，而是一时不知道该从哪里改简历。越有经验的候选人，过去做过的项目、承担过的角色、解决过的问题越多，最适合某份工作的证据反而越容易被埋在记忆里。很多 JD 又写得很大，技能清单很长，表面上什么都要，背后真正看重的能力却不一定清楚。这个 skill 要做的是通过一轮一问，帮用户读懂岗位、回忆经历、辨认哪些项目、判断、成果和特长最能回应这份工作，最后把真实材料整理成一个更清晰、更可信、也更贴近目标岗位的候选人叙事。
+
 ## Codex 运行假设
 
 - 默认运行界面是 Codex 的普通聊天线程，不依赖 Dify、Coze 或其他外部状态流管理。

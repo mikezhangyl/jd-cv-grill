@@ -6,6 +6,12 @@
 
 `jd-cv-grill` 是一个面向中英文求职场景的简历优化 skill：根据招聘 JD、职位描述、目标岗位、现有简历/CV、LinkedIn/profile 或项目经历，逐轮追问候选人的真实贡献、项目证据、指标和取舍，然后生成更贴合岗位的简历内容。
 
+## Why This Exists / 为什么需要它
+
+You may know the feeling: you open a job description and cannot immediately see how to reshape your resume around it. The goal is not to invent experience. The real problem is that experienced candidates have often done many things across many projects, roles, and teams, so the most relevant proof can be buried in memory. Many JDs also read like wish lists: long skill lists, broad requirements, and unclear priorities. `jd-cv-grill` helps at that exact point. Through focused one-question-at-a-time interviewing, it helps you read the role, recover overlooked evidence, identify which projects, decisions, results, and strengths matter most for this job, and turn them into a more truthful, specific, and role-fit CV or resume.
+
+你可能也有过这样的感受：看到一份 JD 时，并不是没有经历，而是一时不知道该从哪里改简历。这个过程不是教你编故事。真正的问题往往是，越有经验的候选人，过去做过的项目、承担过的角色、解决过的问题越多，最适合这份工作的证据反而容易被埋在记忆里。再加上很多 JD 写得很大，技能清单很长，表面上什么都要，背后真正看重的能力却不一定清楚。`jd-cv-grill` 想帮你解决的就是这个卡点：它通过一轮一问的方式，帮你读懂岗位、回忆经历、辨认哪些项目、判断、成果和特长最能回应这份工作，最后把这些真实材料整理成一个更清晰、更可信、也更贴近目标岗位的你。
+
 ## Search Keywords / 搜索关键词
 
 Use this skill when searching for:
