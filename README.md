@@ -42,49 +42,43 @@ job application, LinkedIn profile, interview preparation, career story,
 
 ## Install for AI Coding Agents / 安装到 AI 编程助手
 
-The recommended installer is the Agent Skills CLI. It can install this skill into Codex, Claude Code, Cursor, or multiple agents at once.
+The recommended installer is the Agent Skills CLI. It can install this skill into Codex, Claude Code, Cursor, or multiple agents at once. By default, these commands install the skill into the current project. Add `-g` for global user-level installation.
 
-推荐使用 Agent Skills CLI 安装。它可以把这个 skill 安装到 Codex、Claude Code、Cursor，或者一次安装到多个 AI coding agents。
+推荐使用 Agent Skills CLI 安装。它可以把这个 skill 安装到 Codex、Claude Code、Cursor，或者一次安装到多个 AI coding agents。默认是安装到当前项目；如果想安装到用户全局环境，加 `-g`。
 
 ### Quick Install / 快速安装
 
 Install for Codex:
 
 ```bash
-npx skills add mikezhangyl/jd-cv-grill -a codex
+npx skills add mikezhangyl/jd-cv-grill -a codex -y --copy
 ```
 
 Install for Claude Code:
 
 ```bash
-npx skills add mikezhangyl/jd-cv-grill -a claude-code
+npx skills add mikezhangyl/jd-cv-grill -a claude-code -y --copy
 ```
 
 Install for Cursor:
 
 ```bash
-npx skills add mikezhangyl/jd-cv-grill -a cursor
+npx skills add mikezhangyl/jd-cv-grill -a cursor -y --copy
 ```
 
 Install for both Claude Code and Cursor:
 
 ```bash
-npx skills add mikezhangyl/jd-cv-grill -a claude-code cursor
-```
-
-Install for all detected agents:
-
-```bash
-npx skills add mikezhangyl/jd-cv-grill --all
+npx skills add mikezhangyl/jd-cv-grill -a claude-code cursor -y --copy
 ```
 
 中文说明：
 
-- Codex 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a codex`
-- Claude Code 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a claude-code`
-- Cursor 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a cursor`
-- 如果你同时使用 Claude Code 和 Cursor，运行 `npx skills add mikezhangyl/jd-cv-grill -a claude-code cursor`
-- 如果你希望安装到所有已检测到的 agent，运行 `npx skills add mikezhangyl/jd-cv-grill --all`
+- Codex 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a codex -y --copy`
+- Claude Code 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a claude-code -y --copy`
+- Cursor 用户运行 `npx skills add mikezhangyl/jd-cv-grill -a cursor -y --copy`
+- 如果你同时使用 Claude Code 和 Cursor，运行 `npx skills add mikezhangyl/jd-cv-grill -a claude-code cursor -y --copy`
+- `-y` 表示跳过确认提示，`--copy` 表示复制文件而不是创建软链接，适合文档里的复制粘贴安装。
 
 ### Preview Before Installing / 安装前预览
 
@@ -99,10 +93,20 @@ npx skills add mikezhangyl/jd-cv-grill --list
 Install globally instead of only for the current project:
 
 ```bash
-npx skills add mikezhangyl/jd-cv-grill -g -a claude-code cursor
+npx skills add mikezhangyl/jd-cv-grill -g -a claude-code cursor -y --copy
 ```
 
 如果你希望这个 skill 在所有项目里都可用，可以加 `-g` 做全局安装。
+
+### Advanced: Install for Every Agent / 高级：安装到所有 Agent
+
+This command is valid, but it can write to many agent directories in the current project. Use it only if you know you want that.
+
+```bash
+npx skills add mikezhangyl/jd-cv-grill --all --copy
+```
+
+这条命令有效，但会把 skill 安装到很多 agent 目录里。只在你明确需要“一次装给所有 agent”时使用。
 
 ### Update / 更新
 
